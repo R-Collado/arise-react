@@ -8,8 +8,8 @@ function App() {
 		<>
 			<PrimaryNavigation />
 			<div className="artists-container">
-				<ArtistImages />
 				<ArtistList />
+				<ArtistImages />
 			</div>
 		</>
 	);

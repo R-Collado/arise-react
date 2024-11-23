@@ -9,10 +9,12 @@
     width: 100%;
   }
 
+  
   .artist-list {
     grid-column: 6 / 8;
     list-style: none;
-    position: relative;
+    // position: absolute;
+    z-index: 10;
 
     .active-arrow {
       position: absolute;
@@ -26,6 +28,7 @@
 
     li {
       color: #797979;
+      z-index: 10;
 
       button {
         background: transparent;
@@ -33,6 +36,7 @@
         color: inherit;
         cursor: pointer;
         font-weight: bold;
+        min-width: max-content;
         text-transform: uppercase;
         transition: color 0.25s ease-in-out;
       }

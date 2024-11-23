@@ -21,13 +21,11 @@ export const ArtistList = () => {
 				<div className="active-arrow">
 					<ActiveArrow />
 				</div>
-				<ul className="artist-list">
-					{artistNames.map((artistName: string, idx: number) => (
-						<li key={artistName} className={idx === 0 ? 'active' : ''}>
-							<ArtistButton artistName={artistName} />
-						</li>
-					))}
-				</ul>
+				{artistNames.map((artistName: string, idx: number) => (
+					<li key={artistName} className={idx === 0 ? 'active' : ''}>
+						<ArtistButton artistName={artistName} />
+					</li>
+				))}
 			</ul>
 		</section>
 	);

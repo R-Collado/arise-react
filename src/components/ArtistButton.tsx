@@ -12,7 +12,6 @@ const moveActiveArrow = (e: any) => {
 	});
 
 	e.target.parentElement.classList.add('active');
-	console.log(e.target.textContent);
 
 	gsap.to(activeArrow, {
 		top: e.target.offsetTop,
