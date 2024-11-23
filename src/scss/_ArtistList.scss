@@ -14,15 +14,14 @@
     list-style: none;
     position: relative;
 
-
     .active-arrow {
       position: absolute;
       right: 0;
       transform: translateY(20%);
     }
 
-    button + button {
-      margin-top: 2rem;
+    li + li {
+      margin-top: .5rem;
     }
 
     li {
