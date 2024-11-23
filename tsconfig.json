@@ -7,7 +7,10 @@
 		"types/**/*.ts",
 		"e2e",
 		".eslintrc.cjs",
-		"test/setup-test.ts"
+		"test/setup-test.ts",
+		"src/components/PrimaryNavigation.jsx",
+		"src/components/ArtistImages.tsx",
+		"src/components/ArtistList.tsx"
 	],
 	// "exclude": ["node_modules"],
 	"compilerOptions": {
@@ -75,7 +78,7 @@
 		// "strictFunctionTypes": true, // Enable strict checking of function types.
 		// "strictNullChecks": true, // Enable strict null checks.
 		// "strictPropertyInitialization": true, // Enable strict checking of property initialization in classes.
-		// "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type.
+		"noImplicitAny": false, // Raise error on expressions and declarations with an implied 'any' type.
 		// "noImplicitThis": true, // Raise error on 'this' expressions with an implied 'any' type.
 		// "allowUnusedLabels": false,
 		// "allowUnreachableCode": false,

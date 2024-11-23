@@ -1,0 +1,33 @@
+.primary-navigation {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: 1rem;
+
+        a {
+          color: #acacac;
+          font-weight: 700;
+          text-decoration: none;
+
+          &:hover {
+            color: #000;
+          }
+        }
+
+        &.active {
+          font-size: 10rem;
+          font-weight: 600;
+          line-height: 1;
+          pointer-events: none;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+  }

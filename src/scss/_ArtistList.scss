@@ -1,0 +1,46 @@
+.artist-list-section {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(4, 4rem);
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .artist-list {
+    grid-column: 6 / 8;
+    list-style: none;
+    position: relative;
+
+
+    .active-arrow {
+      position: absolute;
+      right: 0;
+      transform: translateY(20%);
+    }
+
+    button + button {
+      margin-top: 2rem;
+    }
+
+    li {
+      color: #797979;
+
+      button {
+        background: transparent;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color 0.25s ease-in-out;
+      }
+
+      &.active,
+      button:hover {
+        color: #080808;
+      }
+    }
+  }

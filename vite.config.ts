@@ -5,8 +5,8 @@ import type { ConfigEnv, PluginOption } from 'vite';
 
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
-import checker from 'vite-plugin-checker';
-import { compression } from 'vite-plugin-compression2';
+// import checker from 'vite-plugin-checker';
+// import { compression } from 'vite-plugin-compression2';
 import svgr from 'vite-plugin-svgr';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
@@ -53,7 +53,7 @@ export default ({ command, mode }: ConfigEnv) => {
 			},
 			open: true, // Open the browser when the server starts
 			strictPort: true, // Close the server if the port is already in use
-			port: 4500, // Port 4500 is mandatory for auth redirection
+			port: 4321,
 		},
 
 		/* Server Build */
@@ -61,7 +61,7 @@ export default ({ command, mode }: ConfigEnv) => {
 			open: true, // Open the browser when the server starts
 			host: true, // needed for the Docker Container port mapping to work
 			strictPort: true, // Close the server if the port is already in use
-			port: 4500, // Port 4500 is mandatory for auth redirection
+			port: 4321,
 		},
 
 		/* Environment */
