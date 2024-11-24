@@ -7,10 +7,8 @@ function App() {
 	return (
 		<>
 			<PrimaryNavigation />
-			<div className="artists-container">
-				<ArtistList />
-				<ArtistImages />
-			</div>
+			<ArtistImages />
+			<ArtistList />
 		</>
 	);
 }
