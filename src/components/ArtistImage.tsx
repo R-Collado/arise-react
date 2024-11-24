@@ -7,8 +7,6 @@ export const ArtistImage = ({ image, imageType }) => {
 	const toggleFollowMouse = (e: any) => {
 		setIsFollowingMouse(!isFollowingMouse);
 
-		console.log('in');
-
 		const image = e.target;
 		gsap.to(image, {
 			scale: 1.25,
@@ -21,7 +19,6 @@ export const ArtistImage = ({ image, imageType }) => {
 		const image = e.target;
 		const parentDiv = image.parentElement;
 
-		console.log('moving');
 		// get where the container is on the page
 		const boundingRect = parentDiv.getBoundingClientRect();
 
@@ -50,11 +47,23 @@ export const ArtistImage = ({ image, imageType }) => {
 			y: 0,
 			scale: 1,
 			duration: 0.5,
+			ease: 'bounce.out',
 		});
 	};
+
+	const imageSrc = `/src/assets/artist-images/${image}`;
+
 	return (
-		<div className={`image image-${imageType}`}>
-			<img src={image} alt="" onMouseEnter={toggleFollowMouse} onMouseMove={followMouse} onMouseLeave={mouseLeave} />
+		<div className={`container image-${imageType}`}>
+			<div className={`image `}>
+				<img
+					src={imageSrc}
+					alt=""
+					onMouseEnter={toggleFollowMouse}
+					onMouseMove={followMouse}
+					onMouseLeave={mouseLeave}
+				/>
+			</div>
 		</div>
 	);
 };
