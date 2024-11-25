@@ -3,16 +3,28 @@ import ActiveArrow from '../assets/active-arrow.svg?react';
 
 import { ArtistButton } from './ArtistButton';
 
-import gsap from 'gsap';
+import artists from '../data/artists.json';
 
-const artistNames = ['Polo G', 'Juice WRLD', '4batz', 'Scorey', 'Sleepy Hallow', 'Post Malone'];
+import gsap from 'gsap';
+import { moveActiveArrowOnLoad } from '@/animations/activeArrow';
 
 export const ArtistList = () => {
 	useEffect(() => {
-		const firstArtistButton = document.querySelector('.artist-list button') as HTMLButtonElement;
-		gsap.set('.active-arrow', {
-			top: firstArtistButton?.offsetTop,
-		});
+		const artistButtons = document.querySelectorAll('.artist-list button') as NodeListOf<HTMLButtonElement>;
+		moveActiveArrowOnLoad();
+
+		gsap.fromTo(
+			artistButtons,
+			{
+				y: 50,
+			},
+			{
+				y: 0,
+				stagger: 0.1,
+				duration: 0.5,
+				delay: 0.25,
+			},
+		);
 	});
 
 	return (
@@ -21,9 +33,9 @@ export const ArtistList = () => {
 				<div className="active-arrow">
 					<ActiveArrow />
 				</div>
-				{artistNames.map((artistName: string, idx: number) => (
-					<li key={artistName} className={idx === 0 ? 'active' : ''}>
-						<ArtistButton artistName={artistName} />
+				{artists.map((artist: any, idx: number) => (
+					<li key={artist.path} className={idx === 0 ? 'active' : ''} data-artist={artist.path}>
+						<ArtistButton artistName={artist.name} />
 					</li>
 				))}
 			</ul>

@@ -1,0 +1,182 @@
+[
+	{
+		"name": "Polo G",
+		"path": "polo-g",
+		"images": [
+			{
+				"src": "image-1.png",
+				"size": "landscape"
+			},
+			{
+				"src": "image-2.png",
+				"size": "square"
+			},
+			{
+				"src": "image-3.png",
+				"size": "landscape"
+			},
+			{
+				"src": "image-4.png",
+				"size": "portrait"
+			},
+			{
+				"src": "image-5.png",
+				"size": "landscape"
+			},
+			{
+				"src": "image-6.png",
+				"size": "square"
+			}
+		]
+	},
+	{
+		"name": "Juice WRLD",
+		"path": "juice-wrld",
+		"images": [
+			{
+				"src": "image-1.png",
+				"size": "landscape"
+			},
+			{
+				"src": "image-2.jpg",
+				"size": "square"
+			},
+			{
+				"src": "image-3.png",
+				"size": "landscape"
+			},
+			{
+				"src": "image-4.jpg",
+				"size": "square"
+			},
+			{
+				"src": "image-5.webp",
+				"size": "landscape"
+			},
+			{
+				"src": "image-6.png",
+				"size": "portrait"
+			}
+		]
+	},
+	{
+		"name": "4batz",
+		"path": "four-batz",
+		"images": [
+			{
+				"src": "image-1.jpg",
+				"size": "square"
+			},
+			{
+				"src": "image-2.webp",
+				"size": "landscape"
+			},
+			{
+				"src": "image-3.jpg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-4.jpg",
+				"size": "portrait"
+			},
+			{
+				"src": "image-5.jpg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-6.jpg",
+				"size": "portrait"
+			}
+		]
+	},
+	{
+		"name": "Figa Flawas",
+		"path": "figa-flawas",
+		"images": [
+			{
+				"src": "image-1.jpg",
+				"size": "square"
+			},
+			{
+				"src": "image-2.jpg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-3.jpg",
+				"size": "portrait"
+			},
+			{
+				"src": "image-4.jpg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-5.jpg",
+				"size": "square"
+			},
+			{
+				"src": "image-6.jpg",
+				"size": "landscape"
+			}
+		]
+	},
+	{
+		"name": "Luck",
+		"path": "luck",
+		"images": [
+			{
+				"src": "image-1.jpg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-2.jpeg",
+				"size": "square"
+			},
+			{
+				"src": "image-3.png",
+				"size": "landscape"
+			},
+			{
+				"src": "image-4.png",
+				"size": "portrait"
+			},
+			{
+				"src": "image-5.jpeg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-6.jpg",
+				"size": "square"
+			}
+		]
+	},
+	{
+		"name": "Smino",
+		"path": "smino",
+		"images": [
+			{
+				"src": "image-1.jpeg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-2.jpeg",
+				"size": "square"
+			},
+			{
+				"src": "image-3.jpg",
+				"size": "square"
+			},
+			{
+				"src": "image-4.jpg",
+				"size": "landscape"
+			},
+			{
+				"src": "image-5.jpg",
+				"size": "portrait"
+			},
+			{
+				"src": "image-6.jpg",
+				"size": "landscape"
+			}
+		]
+	}
+]

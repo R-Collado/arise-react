@@ -22,10 +22,13 @@
           font-size: 10rem;
           font-weight: 600;
           line-height: 1;
-          pointer-events: none;
+          max-height: 10rem;
+          overflow: hidden;
+          pointer-events: none  ;
 
           a {
             color: #000;
+
           }
         }
       }

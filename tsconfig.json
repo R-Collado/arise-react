@@ -9,7 +9,7 @@
 		".eslintrc.cjs",
 		"test/setup-test.ts",
 		"src/components/PrimaryNavigation.jsx",
-		"src/components/ArtistImages.tsx",
+		"src/components/ArtistImages.jsx",
 		"src/components/ArtistList.tsx"
 	],
 	// "exclude": ["node_modules"],

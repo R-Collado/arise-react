@@ -1,4 +1,28 @@
+import gsap from 'gsap';
+import { useEffect } from 'react';
+import SplitType from 'split-type';
+
 export const PrimaryNavigation = () => {
+	useEffect(() => {
+		const firstLink = document.querySelector('.primary-navigation a') as HTMLAnchorElement;
+		const splitLink = new SplitType(firstLink);
+
+		const chars = splitLink.chars;
+
+		gsap.fromTo(
+			chars,
+			{
+				y: 150,
+			},
+			{
+				y: 0,
+				stagger: 0.02,
+				duration: 0.5,
+				ease: 'power4.out',
+			},
+		);
+	});
+
 	return (
 		<nav className="primary-navigation">
 			<ul>
