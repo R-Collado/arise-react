@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import gsap from 'gsap';
+import { useNavigate } from 'react-router';
+import { animateLeaveArtistsSection } from '@/animations/routing';
 
 export const ArtistImage = ({ image, imageType }) => {
 	const [isFollowingMouse, setIsFollowingMouse] = useState(false);
+	const navigate = useNavigate();
 
 	const toggleFollowMouse = (e: any) => {
 		setIsFollowingMouse(!isFollowingMouse);
@@ -74,8 +77,8 @@ export const ArtistImage = ({ image, imageType }) => {
 					src={imageSrc}
 					alt=""
 					onMouseEnter={toggleFollowMouse}
-					// onMouseMove={followMouse}
 					onMouseLeave={mouseLeave}
+					onClick={() => animateLeaveArtistsSection(navigate('/focus'))}
 				/>
 			</div>
 		</div>

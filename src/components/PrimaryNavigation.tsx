@@ -25,6 +25,11 @@ export const PrimaryNavigation = () => {
 
 	return (
 		<nav className="primary-navigation">
+			<div className="link-container">
+				<a href="/" className="hidden">
+					Index
+				</a>
+			</div>
 			<ul>
 				<li className="active">
 					<a href="/">Artists,</a>

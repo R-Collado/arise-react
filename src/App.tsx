@@ -1,17 +1,26 @@
 import './App.css';
-import { ArtistImages } from './components/ArtistImages';
+import { Home } from './components/routes/Home';
+
+import { setupLenis } from './utils/lenis';
+import { BrowserRouter, Route, Routes } from 'react-router';
+
 import { ArtistList } from './components/ArtistList';
 import { PrimaryNavigation } from './components/PrimaryNavigation';
-import { setupLenis } from './utils/lenis';
+import { Focus } from './components/routes/Focus';
 
 function App() {
 	setupLenis();
 
 	return (
 		<>
-			<PrimaryNavigation />
-			<ArtistImages />
-			<ArtistList />
+			<BrowserRouter>
+				<PrimaryNavigation />
+				<ArtistList />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/focus" element={<Focus />} />
+				</Routes>
+			</BrowserRouter>
 		</>
 	);
 }
