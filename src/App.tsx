@@ -7,7 +7,6 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import { ArtistList } from './components/ArtistList';
 import { PrimaryNavigation } from './components/PrimaryNavigation';
 import { Focus } from './components/routes/Focus';
-
 function App() {
 	setupLenis();
 

@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import gsap from 'gsap';
 import { useNavigate } from 'react-router';
-import { animateLeaveArtistsSection } from '@/animations/routing';
 
-export const ArtistImage = ({ image, imageType }) => {
+export const ArtistImage = ({ artistPath, image, imageType }) => {
 	const [isFollowingMouse, setIsFollowingMouse] = useState(false);
 	const navigate = useNavigate();
 
@@ -28,6 +27,16 @@ export const ArtistImage = ({ image, imageType }) => {
 			scale: 1,
 			duration: 0.5,
 			ease: 'bounce.out',
+		});
+	};
+
+	const animateImageClick = (artistPath: string) => {
+		gsap.to('.artists', {
+			opacity: 0,
+			duration: 0.5,
+			onComplete: () => {
+				navigate('/focus#' + artistPath);
+			},
 		});
 	};
 
@@ -78,7 +87,7 @@ export const ArtistImage = ({ image, imageType }) => {
 					alt=""
 					onMouseEnter={toggleFollowMouse}
 					onMouseLeave={mouseLeave}
-					onClick={() => animateLeaveArtistsSection(navigate('/focus'))}
+					onClick={() => animateImageClick(artistPath)}
 				/>
 			</div>
 		</div>

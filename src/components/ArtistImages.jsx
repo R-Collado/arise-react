@@ -83,6 +83,7 @@ export const ArtistImages = () => {
 								alt={artist.name}
 								imageType={image.size}
 								artistNumber={image.hasNumber && idx + 1}
+								artistPath={artist.path}
 							/>
 						))}
 					</section>

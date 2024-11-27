@@ -16,11 +16,3 @@ export const enterFocusComponent = () => {
 		display: 'inline-block',
 	});
 };
-
-export const animateLeaveArtistsSection = (onComplete: any) => {
-	gsap.to('.artists', {
-		opacity: 0,
-		duration: 0.5,
-		onComplete: onComplete,
-	});
-};
